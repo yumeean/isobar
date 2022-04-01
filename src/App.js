@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Isobar from './Isobar'
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header><div style={{width: '24px', height: '800px'}}>    
+      <Isobar lowLabel="Low" highLabel="High" titleLabel="Pressure" colorTable={this.colorTable}    />
+    </div>
     </div>
   );
 }
